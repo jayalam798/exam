@@ -1,0 +1,214 @@
+*{
+    margin: 5px;
+    padding:5px;
+    box-sizing: border-box;
+}
+body{
+    background:#000;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+a{
+    text-decoration:none;
+}
+p{
+    text-align: justify;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5em;
+}
+.padre{
+    display: flex;
+    flex-flow: column nowrap;
+}
+.header{
+    background:#000;
+    display: flex;
+    flex-flow: column nowrap;
+    border-radius: 1em;
+}
+    .menu{
+        background:#00587a;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        border-radius: 1em;
+    }
+    .menu img{
+        position: inherit;
+        width:25%;  
+        height:8em;  
+        border-radius:1em;
+        background:rgb(255, 255, 255);
+    }
+    .logo{
+        background:#fbe0c4;
+        flex:1 1 auto;
+    }
+    .nav{
+        flex:6 1 auto;
+    }
+        .nav a{
+            font-size:15px;
+            text-transform:uppercase;
+            padding:0 10px;
+            letter-spacing: 2px;
+            color:white;
+            float:right;
+        }
+        .nav a:hover{
+            color :rgb(90, 180, 202);
+        }
+    .texto-principal{
+        background:#000;
+        align-items:center;
+        border-radius: 1em;
+    }
+    .texto-principal img{
+        width: 99%;
+        border-radius: 1em;
+    }
+    .texto-principal h1{
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: center;
+        color:#fff;
+        font-style: italic;
+    }
+.section{
+    background:rgba(255,255,255,.1);
+    display:flex;
+    border-radius: 1em;
+}
+    .articulos{
+        background:#000 ;
+        flex: 2 1 auto;
+        display: flex;
+        flex-flow: row wrap;
+
+    }
+    .article{
+        background:#aad8d3 ;
+        flex:1 1 auto;
+        width:40%;
+        border-radius: 1em;
+    }
+    .article h1{
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: right;
+        color:#00587a;
+        font-style: italic;
+        font-size: 3em;
+    }
+    .navegacion{
+        background:#aad8d3;
+        flex: 1 1 100%;
+        border-radius: 1em;
+    }
+    .navegacion h1{
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: right;
+        color:#00587a;
+        font-style: italic;
+        font-size: 3em;
+        
+    }
+    .navegacion li{
+        text-align: justify;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 1.5em;
+        font-weight: 1000;
+    }
+    .aside{
+        background:#000;
+        flex:1 1 auto;
+        width:30%;
+        border-radius: 1em;
+    }
+    .publicidad{
+        background:#aad8d3;
+        border-radius:1em;
+    }
+    .publicidad img{
+        width:min-content;
+        width:380px;
+        height:600px;
+        border-radius: 1em;
+    }
+    .publicidad h1{
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: right;
+        color:#00587a;
+        font-style: italic;
+        font-size: 3em;
+    }
+    
+.footer{
+    background:rgba(255,255,255,.1);
+    display: flex;
+    justify-content: center;
+    border-radius: 1em;
+}
+    .pie{
+        background: #00587a;
+        width:80%;
+        border-radius: 1em;
+    }
+    .pie p{
+        text-align: center;
+    }
+
+@media all and (max-width: 1000px){
+    .nav a{
+        font-size:15px;
+    }
+        .publicidad img{
+            width:min-content;
+            width:100%;
+            border-radius: 1em;
+        }
+}
+@media all and (max-width:400px){
+    .aside{
+        flex-direction: column;
+        width: 100%;
+    }
+    .aside img{
+        width: 100%;
+    }
+    .menu{
+        flex-direction:column;
+        height: auto;
+    }
+    .menu img{
+        width:100%;
+        height:8em;
+    }
+    .nav a{
+        font-size:15px;
+    }
+
+    .aside{
+        display:flex;
+        justify-content:center;
+    }
+    .section {
+        flex-direction: column;
+    }
+    .article{
+        flex-direction: column;
+        width: 100%;
+    }
+    .articulos{
+        flex-direction: column;
+        height:auto;
+        flex:auto;
+    }
+    .navegacion li{
+        font-size: 20px;
+    }
+}
+p{
+    font-size:20px;
+}
+h1{
+    font-size:20px;
+}
+    
